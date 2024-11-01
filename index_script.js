@@ -1,27 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const home_button = document.getElementById('home-button');
-    home_button.addEventListener('click', function() {
+    document.getElementById('home-button').addEventListener('click', function() {
         window.location.href = 'index.html';
+        history.pushState(null, 'Home', 'index');
     });
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const updates_button = document.getElementById('updates-button');
-    updates_button.addEventListener('click', function() {
+    document.getElementById('updates-button').addEventListener('click', function() {
         window.location.href = 'updates.html';
+        history.pushState(null, 'Updates', 'updates');
     });
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const about_button = document.getElementById('about-button');
-    about_button.addEventListener('click', function() {
+    document.getElementById('about-button').addEventListener('click', function() {
         window.location.href = 'about.html';
+        history.pushState(null, 'About', 'about');
     });
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const contact_button = document.getElementById('contact-button');
-    contact_button.addEventListener('click', function() {
+    document.getElementById('contact-button').addEventListener('click', function() {
         window.location.href = 'contact.html';
+        history.pushState(null, 'Contact', 'contact');
     });
 });
