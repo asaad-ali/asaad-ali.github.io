@@ -1,40 +1,36 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Segoe UI', sans-serif;
     background-color: rgba(33, 33, 33, 1.0);
 }
 
 .top-bar {
     position: absolute;
-    top: 0%;
-    width: 100%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    color: rgba(193, 193, 193, 1.0);
+    top: 0vh;
+    width: 100vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     text-align: right;
+    color: rgba(193, 193, 193, 1.0);
     background-color: rgba(0, 0, 0, 0.0);
 }
 
 .top-bar-logo {
-    width: 10%;
-    min-width: 128px;
-    max-width: 768px;
-    height: auto;
     position: absolute;
-    top: 0%;
-    left: 0%;
-    padding-top: 3%;
-    padding-left: 6%;
+    top: 3vh;
+    left: 4vw;
+    width: min(300px, 30vw);
+    height: auto;
     background-color: rgba(0, 0, 0, 0.0);
 }
 
 .top-bar-button {
     transition: all;
     border: none;
-    margin-right: 4%;
+    margin-right: 4vw;
     font-weight: bold;
-    font-size: 90%;
+    font-size: min(18px, 1.2vw);
     color: rgba(193, 193, 193, 1.0);
 }
 
@@ -45,9 +41,10 @@
 
 .under-construction {
     position: absolute;
-    bottom: 50%;
-    width: 100%;
+    bottom: 50vh;
+    width: 100vw;
     text-align: center;
+    font-size: min(20px, 1.33vw);
     font-weight: bold;
     color: rgba(193, 193, 193, 1.0);
     background-color: rgba(0, 0, 0, 0.0);
@@ -55,11 +52,11 @@
 
 .bottom-bar {
     position: absolute;
-    bottom: 0%;
-    width: 100%;
-    padding-top: 0.2%;
-    padding-bottom: 0.2%;
-    font-size: 75%;
+    bottom: 0vh;
+    width: 100vw;
+    padding-top: 0.35vh;
+    padding-bottom: 0.35vh;
+    font-size: min(10px, 1vw);
     text-align: center;
     color: rgba(193, 193, 193, 1.0);
     background-color: rgba(0, 0, 0, 0.0);
