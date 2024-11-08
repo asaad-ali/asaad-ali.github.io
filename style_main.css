@@ -17,16 +17,16 @@
     --page-body-height: 100vh;
     --TOP-BAR-margin-LR: calc(var(--page-body-width) * 0.10);
     --TOP-BAR-margin-TB: max(4px, calc(var(--page-body-height) * 0.025));
-    --TOP-BAR-logo-size: min(34px, calc(var(--page-body-width) * 0.03));
+    --TOP-BAR-logo-size: clamp(14px, calc(var(--page-body-width) * 0.03), 30px);
     --TOP-BAR-logo-string-margin-H: 4px;
-    --TOP-BAR-string-size: min(22px, calc(var(--page-body-width) * 0.02));
-    --TOP-BAR-button-size: min(14px, calc(var(--page-body-width) * 0.015));
+    --TOP-BAR-string-size: clamp(10px, calc(var(--page-body-width) * 0.023), 22px);
+    --TOP-BAR-button-size: clamp(8px, calc(var(--page-body-width) * 0.015), 14px);
     --TOP-BAR-button-gap-margin-L: calc(var(--page-body-width) * 0.04);
     --TOP-BAR-button-transition-time: 0.3s;
     --BOTTOM-BAR-margin-LR: var(--TOP-BAR-margin-LR);
     --BOTTOM-BAR-margin-T: var(--TOP-BAR-margin-TB);
     --BOTTOM-BAR-margin-B: 2px;
-    --BOTTOM-BAR-copyright-size: min(10px, calc(var(--page-body-width) * 0.01));
+    --BOTTOM-BAR-copyright-size: clamp(6px, calc(var(--page-body-width) * 0.008), 10px);
     --primary-color: rgba(220, 110, 10, 1.0);
     --secondary-color: rgba(33, 33, 53, 1.0);
     --tertiary-color: rgba(255, 245, 255, 1.0);
@@ -148,7 +148,7 @@ body {
     display: flex;
     width: calc(100% - var(--TOP-BAR-margin-LR));
     height: 100%;
-    margin-left: calc(var(--TOP-BAR-margin-LR) * 0.5);
+    align-self: center;
 }
 
 /* --------- UNDER CONSTRUCTION --------- */
