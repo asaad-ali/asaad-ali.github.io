@@ -1,67 +1,67 @@
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("/fonts/JetBrainsMono-2.304/100.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/100.woff2") format("woff2");
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("/fonts/JetBrainsMono-2.304/200.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/200.woff2") format("woff2");
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("/fonts/JetBrainsMono-2.304/300.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/300.woff2") format("woff2");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("/fonts/JetBrainsMono-2.304/400.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/400.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("/fonts/JetBrainsMono-2.304/500.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/500.woff2") format("woff2");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("/fonts/JetBrainsMono-2.304/600.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/600.woff2") format("woff2");
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("/fonts/JetBrainsMono-2.304/700.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/700.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("/fonts/JetBrainsMono-2.304/800.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/800.woff2") format("woff2");
     font-weight: 800;
     font-style: normal;
 }
 
 :root {
-    --cursor-normal: url("/images/cursor-normal-32x32.png");
-    --cursor-pointer: url("/images/cursor-pointer-32x32.png");
+    --cursor-normal: url("../images/cursor-normal-32x32.png");
+    --cursor-pointer: url("../images/cursor-pointer-32x32.png");
 
     --f-family-default: "JetBrains Mono";
 
     --clr-primary: rgba(33, 33, 53, 1.0);
-    --clr-secondary: rgb(225, 215, 215);
+    --clr-secondary: rgb(215, 215, 215);
     --clr-tertiary: rgb(220, 110, 10);
     --clr-default-bg: var(--clr-primary);
     --clr-default-selection-bg: rgba(0, 128, 128, 1.0);

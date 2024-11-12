@@ -23,8 +23,8 @@ function __set_fragment(mouse_event, fragment) {
 
     // Set position.
     fragment.style.position = "absolute";
-    fragment.style.top = `${mouse_event.clientY - (10 / 2)}px`;
     fragment.style.left = `${mouse_event.clientX - (10 / 2)}px`;
+    fragment.style.top = `${mouse_event.clientY - (10 / 2)}px`;
 
     // Set colors.
     fragment.style.backgroundColor = "rgb(220, 110, 10)";
