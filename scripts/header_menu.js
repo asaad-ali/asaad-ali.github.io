@@ -4,6 +4,9 @@ const __BUTTON = document.getElementById("header-toggle");
 
 
 /**
+ * @note    
+ * MAKE SURE `element id: "header-logo"`  
+ * DOES NOT HAVE `:hover` OR `:active` OR `CUSTOM` INTERACTIONS!
  * @description
  * Sets `element id: "header-list"` display style to `none`.  
  * Removes `class: "header-toggle-active"` off `element id: "header-toggle"`.  
@@ -13,7 +16,9 @@ const __BUTTON = document.getElementById("header-toggle");
  * On `"header-toggle"` click, toggles element with class: `"header-toggle-active"`.  
  * If element contains class, `"header-list"`'s display style is set to `flex`.
  * If not, display style is set to `none`.  
- * If click is not on `"header-toggle"` or `"header-list"` display style is set to `none`.
+ * If click is not on `"header-toggle"` or `"header-list"` display style is set to `none`.  
+ * After toggling off via button element click, forces `"click"` event on `element id: "header-logo"`.  
+ * (To accommodate for touch device's tap behaviour)
  * @returns {null} null
  */
 export function header_menu() {
@@ -40,6 +45,9 @@ export function header_menu() {
 
             // If not, set list element display style to none.
             __LIST.style.display = "none";
+
+            // Clicks on logo to force hover off button element (for phones).
+            document.getElementById("header-logo").click();
         }
     });
 
