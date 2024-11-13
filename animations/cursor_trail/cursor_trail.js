@@ -61,12 +61,12 @@ function __animate_fragment(fragment) {
         // Compare element size and opacity to allowed limit.
         if (new_size <= 0 || new_opacity <= 0) {
 
-            // Remove element from DOM.
+            // If so, remove element from DOM.
             fragment.remove();
         }
         else {
 
-            // Schedule function for callback
+            // If not, schedule function for callback
             requestAnimationFrame(animate_element);
         }
     }
@@ -80,8 +80,10 @@ function __animate_fragment(fragment) {
 
 function __limit_container() {
 
-    // Compare container size to allowed limit.
+    // Check if container has reached allowed limit.
     if (__FRAGMENT_CONTAINER.length > 10) {
+
+        // If so,
 
         // Remove oldest element in container from DOM.
         __FRAGMENT_CONTAINER[0].remove();
@@ -97,11 +99,12 @@ function __limit_container() {
 /**
  * @description
  * Inserts event listener `"mousemove"` into `<main>`.  
- * Listens for cursor movement over specified content area.
- * @returns {null}
+ * Listens for cursor movement over specified content area and applies effect.
+ * @returns {null} null
  */
 export function cursor_trail() {
 
+    // Add event listener for mouse move event into <main>.
     document.querySelector("main").addEventListener("mousemove", (event) => {
 
         const FRAGMENT = __create_fragment();

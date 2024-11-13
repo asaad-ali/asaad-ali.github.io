@@ -12,9 +12,9 @@
     --clr-error-message-2: var(--clr-error-code);
     --clr-error-message-3: var(--clr-error-string);
 
-    --f-size-error-string: clamp(32px, 4vw, 64px);
-    --f-size-error-code: clamp(128px, 16vw, 256px);
-    --f-size-error-message-1: clamp(16px, 2vw, 32px);
+    --f-size-error-string: clamp(24px, 4vw, 64px);
+    --f-size-error-code: clamp(96px, 16vw, 256px);
+    --f-size-error-message-1: clamp(12px, 2vw, 32px);
     --f-size-error-message-2: var(--f-size-error-message-1);
     --f-size-error-message-3: var(--f-size-error-message-1);
 }
