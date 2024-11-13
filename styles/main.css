@@ -201,7 +201,7 @@ header {
     top: var(--pos-t-head-list);
     font-weight: var(--f-weight-head-list);
     font-size: var(--f-size-head-list);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-end;
 }
