@@ -40,9 +40,6 @@ export function header_menu() {
 
             // If not, set list element display style to none.
             __LIST.style.display = "none";
-
-            // Clicks on logo to force hover off button element (for phones).
-            document.getElementById("header-logo").click();
         }
     });
 
