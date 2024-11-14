@@ -191,10 +191,6 @@ header {
     }
 }
 
-#header-toggle:active {
-    color: var(--clr-head-toggle-active);
-}
-
 .header-toggle-active {
     text-decoration-line: underline;
     text-underline-offset: 5px;
