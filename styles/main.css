@@ -183,9 +183,12 @@ header {
     color: var(--clr-head-toggle);
 }
 
-#header-toggle:hover {
-    cursor: var(--cursor-pointer), pointer;
-    color: var(--clr-head-toggle-hover);
+@media (hover: hover) {
+
+    #header-toggle:hover {
+        cursor: var(--cursor-pointer), pointer;
+        color: var(--clr-head-toggle-hover);
+    }
 }
 
 .header-toggle-active {
@@ -220,8 +223,11 @@ header {
     color: var(--clr-head-link);
 }
 
-.header-link a:hover {
-    color: var(--clr-head-link-hover);
+@media (hover: hover) {
+
+    .header-link a:hover {
+        color: var(--clr-head-link-hover);
+    }
 }
 
 .header-link a:active {
