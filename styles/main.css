@@ -1,62 +1,62 @@
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("../fonts/JetBrainsMono-2.304/100.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/100.woff2?v=0.0.0") format("woff2");
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("../fonts/JetBrainsMono-2.304/200.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/200.woff2?v=0.0.0") format("woff2");
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("../fonts/JetBrainsMono-2.304/300.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/300.woff2?v=0.0.0") format("woff2");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("../fonts/JetBrainsMono-2.304/400.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/400.woff2?v=0.0.0") format("woff2");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("../fonts/JetBrainsMono-2.304/500.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/500.woff2?v=0.0.0") format("woff2");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("../fonts/JetBrainsMono-2.304/600.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/600.woff2?v=0.0.0") format("woff2");
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("../fonts/JetBrainsMono-2.304/700.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/700.woff2?v=0.0.0") format("woff2");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("../fonts/JetBrainsMono-2.304/800.woff2") format("woff2");
+    src: url("../fonts/JetBrainsMono-2.304/800.woff2?v=0.0.0") format("woff2");
     font-weight: 800;
     font-style: normal;
 }
 
 :root {
-    --cursor-normal: url("../images/cursor-normal-32x32.png");
-    --cursor-pointer: url("../images/cursor-pointer-32x32.png");
+    --cursor-normal: url("../images/cursor-normal-32x32.png?v=0.0.0");
+    --cursor-pointer: url("../images/cursor-pointer-32x32.png?v=0.0.0");
 
     --f-family-default: "JetBrains Mono";
 
