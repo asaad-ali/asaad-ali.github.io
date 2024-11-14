@@ -54,9 +54,9 @@ function __animate_fragment(fragment) {
         new_opacity = new_opacity - 0.05;
 
         // Assign calculated values to element.
-        fragment.style.width = `${new_size}px`
-        fragment.style.height = `${new_size}px`
-        fragment.style.opacity = `${new_opacity}`
+        fragment.style.width = `${new_size}px`;
+        fragment.style.height = `${new_size}px`;
+        fragment.style.opacity = `${new_opacity}`;
 
         // Compare element size and opacity to allowed limit.
         if (new_size <= 0 || new_opacity <= 0) {

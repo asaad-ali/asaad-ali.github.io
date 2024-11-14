@@ -1,8 +1,3 @@
-const __CLASS_NAME = "header-toggle-active"
-const __LIST = document.getElementById("header-list");
-const __BUTTON = document.getElementById("header-toggle");
-
-
 /**
  * @description
  * Sets `element id: "header-list"` display style to `none`.  
@@ -18,28 +13,32 @@ const __BUTTON = document.getElementById("header-toggle");
  */
 export function header_menu() {
 
+    const ACTIVE_STATE = "header-toggle-active";
+    const HEADER_LIST = document.getElementById("header-list");
+    const HEADER_TOGGLE = document.getElementById("header-toggle");
+
     // Set list element display style to none.
-    __LIST.style.display = "none";
+    HEADER_LIST.style.display = "none";
 
     // Remove class off button element.
-    __BUTTON.classList.toggle(__CLASS_NAME, false);
+    HEADER_TOGGLE.classList.toggle(ACTIVE_STATE, false);
 
     // Add event listener for click event.
-    __BUTTON.addEventListener("click", () => {
+    HEADER_TOGGLE.addEventListener("click", () => {
 
         // Toggle class on button element.
-        __BUTTON.classList.toggle(__CLASS_NAME);
+        HEADER_TOGGLE.classList.toggle(ACTIVE_STATE);
 
         // Check if button element contains class.
-        if (__BUTTON.classList.contains(__CLASS_NAME)) {
+        if (HEADER_TOGGLE.classList.contains(ACTIVE_STATE)) {
 
             // If so, set list element display style to flex.
-            __LIST.style.display = "flex";
+            HEADER_LIST.style.display = "flex";
 
         } else {
 
             // If not, set list element display style to none.
-            __LIST.style.display = "none";
+            HEADER_LIST.style.display = "none";
         }
     });
 
@@ -47,18 +46,18 @@ export function header_menu() {
     document.addEventListener("click", (event) => {
 
         // Check if button element contains class.
-        if (__BUTTON.classList.contains(__CLASS_NAME)) {
+        if (HEADER_TOGGLE.classList.contains(ACTIVE_STATE)) {
 
             // Check if click occured outside of button and list elements.
-            if (!__BUTTON.contains(event.target) && !__LIST.contains(event.target)) {
+            if (!HEADER_TOGGLE.contains(event.target) && !HEADER_LIST.contains(event.target)) {
 
                 // If so,
 
                 // Toggle class on button element.
-                __BUTTON.classList.toggle(__CLASS_NAME);
+                HEADER_TOGGLE.classList.toggle(ACTIVE_STATE);
 
                 // Set list element display style to none.
-                __LIST.style.display = "none";
+                HEADER_LIST.style.display = "none";
             }
         }
     });
