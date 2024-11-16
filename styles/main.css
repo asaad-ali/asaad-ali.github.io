@@ -56,7 +56,7 @@
 
 :root {
     --cursor-normal: url("../images/cursor-normal-32x32.png?v=0.0.0"), auto;
-    --cursor-pointer: url("../images/cursor-pointer-32x32.png?v=0.0.0") 4 0, pointer;
+    --cursor-pointer: url("../images/cursor-pointer-32x32.png?v=0.0.0") 7 0, pointer;
 
     --f-family-default: "JetBrains Mono";
 
