@@ -92,21 +92,21 @@
 
     --m-l-head-logo: 10vw;
     --m-r-head-logo: 8px;
-    --w-head-logo: 48px;
-    --h-head-logo: 48px;
+    --w-head-logo: clamp(32px, 8vw, 48px);
+    --h-head-logo: var(--w-head-logo);
 
     --f-weight-head-title: 800;
-    --f-size-head-title: 26px;
+    --f-size-head-title: clamp(16px, calc(var(--w-head-logo) * 0.5), 24px);
 
     --m-r-head-nav: calc(var(--mp-l-head) + var(--m-l-head-logo));
 
     --f-weight-head-toggle: 800;
-    --f-size-head-toggle: 16px;
+    --f-size-head-toggle: calc(var(--f-size-head-title) * 0.8);
 
     --pos-r-head-list: var(--m-r-head-nav);
     --pos-t-head-list: calc(var(--mp-tb-head) + var(--h-head-logo));
     --f-weight-head-list: 600;
-    --f-size-head-list: 14px;
+    --f-size-head-list: calc(var(--f-size-head-toggle) * 0.8);
 
     --m-t-head-list-item: 8px;
 
@@ -120,7 +120,7 @@
     --p-b-foot: 6px;
 
     --f-weight-foot-copyright: 400;
-    --f-size-foot-copyright: 11px;
+    --f-size-foot-copyright: 8px;
 }
 
 * {
@@ -204,6 +204,7 @@ header {
     top: var(--pos-t-head-list);
     font-weight: var(--f-weight-head-list);
     font-size: var(--f-size-head-list);
+    letter-spacing: 2px;
     display: none;
     flex-direction: column;
     align-items: flex-end;
