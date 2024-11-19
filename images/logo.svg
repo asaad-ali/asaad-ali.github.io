@@ -36,114 +36,114 @@
     </linearGradient>
     <filter
        style="color-interpolation-filters:sRGB"
-       id="filter68"
-       x="-0.29"
-       y="-0.17142857"
-       width="1.53"
-       height="1.4142857">
+       id="filter118"
+       x="-0.060291854"
+       y="-0.061307829"
+       width="1.1457053"
+       height="1.1045839">
       <feFlood
          result="flood"
          in="SourceGraphic"
          flood-opacity="0.501961"
          flood-color="rgb(0,0,0)"
-         id="feFlood67" />
+         id="feFlood117" />
       <feGaussianBlur
          result="blur"
          in="SourceGraphic"
-         stdDeviation="0.200000"
-         id="feGaussianBlur67" />
+         stdDeviation="0.100000"
+         id="feGaussianBlur117" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="0.100000"
+         dy="-0.100000"
+         id="feOffset117" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite117" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite118" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter134"
+       x="-0.17"
+       y="-0.085714287"
+       width="1.29"
+       height="1.2071429">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.501961"
+         flood-color="rgb(0,0,0)"
+         id="feFlood133" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="0.100000"
+         id="feGaussianBlur133" />
       <feOffset
          result="offset"
          in="blur"
          dx="-0.100000"
-         dy="0.200000"
-         id="feOffset67" />
+         dy="0.100000"
+         id="feOffset133" />
       <feComposite
          result="comp1"
          operator="in"
          in="flood"
          in2="offset"
-         id="feComposite67" />
+         id="feComposite133" />
       <feComposite
          result="comp2"
          operator="over"
          in="SourceGraphic"
          in2="comp1"
-         id="feComposite68" />
+         id="feComposite134" />
     </filter>
     <filter
        style="color-interpolation-filters:sRGB"
-       id="filter107"
-       x="-0.12058371"
-       y="-0.12261566"
-       width="1.3165322"
-       height="1.2091679">
+       id="filter159"
+       x="-0.060291919"
+       y="-0.061307849"
+       width="1.1205838"
+       height="1.104584">
       <feFlood
          result="flood"
          in="SourceGraphic"
          flood-opacity="0.501961"
          flood-color="rgb(0,0,0)"
-         id="feFlood106" />
+         id="feFlood157" />
       <feGaussianBlur
          result="blur"
          in="SourceGraphic"
-         stdDeviation="0.200000"
-         id="feGaussianBlur106" />
+         stdDeviation="0.100000"
+         id="feGaussianBlur157" />
       <feOffset
          result="offset"
          in="blur"
-         dx="0.300000"
-         dy="-0.200000"
-         id="feOffset106" />
+         dx="0.000000"
+         dy="-0.100000"
+         id="feOffset157" />
       <feComposite
          result="comp1"
          operator="in"
          in="flood"
          in2="offset"
-         id="feComposite106" />
+         id="feComposite158" />
       <feComposite
          result="comp2"
          operator="over"
          in="SourceGraphic"
          in2="comp1"
-         id="feComposite107" />
-    </filter>
-    <filter
-       style="color-interpolation-filters:sRGB"
-       id="filter131"
-       x="-0.14570547"
-       y="-0.14064742"
-       width="1.2662893"
-       height="1.2271997">
-      <feFlood
-         result="flood"
-         in="SourceGraphic"
-         flood-opacity="0.501961"
-         flood-color="rgb(0,0,0)"
-         id="feFlood130" />
-      <feGaussianBlur
-         result="blur"
-         in="SourceGraphic"
-         stdDeviation="0.200000"
-         id="feGaussianBlur130" />
-      <feOffset
-         result="offset"
-         in="blur"
-         dx="-0.100000"
-         dy="-0.300000"
-         id="feOffset130" />
-      <feComposite
-         result="comp1"
-         operator="in"
-         in="flood"
-         in2="offset"
-         id="feComposite130" />
-      <feComposite
-         result="comp2"
-         operator="over"
-         in="SourceGraphic"
-         in2="comp1"
-         id="feComposite131" />
+         id="feComposite159" />
     </filter>
   </defs>
   <metadata
@@ -169,7 +169,7 @@
        d="m 8.0000008,9 c 1.3333323,0.6666667 1.3333323,1.333333 0,2 -1.5954676,-0.04899 -2.8257101,1.827983 -4.0000011,4 L 1.9999992,13 C 3.9923357,10.338448 5.9923357,9.0051147 8.0000008,9 Z"
        id="path9-5" />
     <path
-       style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter107)"
+       style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter118)"
        d="M 5.9806373,9.4542156 2,13 4,15 Z"
        id="path16" />
     <path
@@ -177,7 +177,7 @@
        d="M 2,13 4,15 9,1 H 7 Z"
        id="path2" />
     <path
-       style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter68)"
+       style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter134)"
        d="M 7,1 8,3.8 9,1 Z"
        id="path17" />
     <path
@@ -185,7 +185,7 @@
        d="M 14,13 12,15 7,1 h 2 z"
        id="path2-8" />
     <path
-       style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter131)"
+       style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter159)"
        d="m 12,15 2,-2 C 12.650908,11.174163 11.303604,10.044556 10.019367,9.4542174 Z"
        id="path18" />
     <path
