@@ -17,6 +17,17 @@
   <defs
      id="defs1">
     <linearGradient
+       id="linearGradient133">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop133" />
+      <stop
+         style="stop-color:#dc6e0a;stop-opacity:1;"
+         offset="0.15801354"
+         id="stop134" />
+    </linearGradient>
+    <linearGradient
        id="swatch331">
       <stop
          style="stop-color:#dc6e0a;stop-opacity:1;"
@@ -25,114 +36,114 @@
     </linearGradient>
     <filter
        style="color-interpolation-filters:sRGB"
-       id="filter236"
-       x="-0.23891891"
+       id="filter68"
+       x="-0.29"
        y="-0.17142857"
-       width="1.4075676"
+       width="1.53"
        height="1.4142857">
       <feFlood
          result="flood"
          in="SourceGraphic"
          flood-opacity="0.501961"
          flood-color="rgb(0,0,0)"
-         id="feFlood235" />
+         id="feFlood67" />
       <feGaussianBlur
          result="blur"
          in="SourceGraphic"
          stdDeviation="0.200000"
-         id="feGaussianBlur235" />
+         id="feGaussianBlur67" />
       <feOffset
          result="offset"
          in="blur"
-         dx="-0.200000"
+         dx="-0.100000"
          dy="0.200000"
-         id="feOffset235" />
+         id="feOffset67" />
       <feComposite
          result="comp1"
          operator="in"
          in="flood"
          in2="offset"
-         id="feComposite235" />
+         id="feComposite67" />
       <feComposite
          result="comp2"
-         operator="atop"
-         in="comp1"
+         operator="over"
+         in="SourceGraphic"
          in2="comp1"
-         id="feComposite236" />
+         id="feComposite68" />
     </filter>
     <filter
        style="color-interpolation-filters:sRGB"
-       id="filter265"
+       id="filter107"
        x="-0.12058371"
-       y="-0.090139038"
-       width="1.2914106"
-       height="1.1647369">
+       y="-0.12261566"
+       width="1.3165322"
+       height="1.2091679">
       <feFlood
          result="flood"
          in="SourceGraphic"
          flood-opacity="0.501961"
          flood-color="rgb(0,0,0)"
-         id="feFlood264" />
+         id="feFlood106" />
       <feGaussianBlur
          result="blur"
          in="SourceGraphic"
          stdDeviation="0.200000"
-         id="feGaussianBlur264" />
+         id="feGaussianBlur106" />
       <feOffset
          result="offset"
          in="blur"
-         dx="0.200000"
-         dy="-0.100000"
-         id="feOffset264" />
+         dx="0.300000"
+         dy="-0.200000"
+         id="feOffset106" />
       <feComposite
          result="comp1"
          operator="in"
          in="flood"
          in2="offset"
-         id="feComposite264" />
+         id="feComposite106" />
       <feComposite
          result="comp2"
-         operator="atop"
-         in="comp1"
+         operator="over"
+         in="SourceGraphic"
          in2="comp1"
-         id="feComposite265" />
+         id="feComposite107" />
     </filter>
     <filter
        style="color-interpolation-filters:sRGB"
-       id="filter323"
-       x="-0.14570532"
-       y="-0.14064737"
-       width="1.266289"
-       height="1.2271996">
+       id="filter131"
+       x="-0.14570547"
+       y="-0.14064742"
+       width="1.2662893"
+       height="1.2271997">
       <feFlood
          result="flood"
          in="SourceGraphic"
          flood-opacity="0.501961"
          flood-color="rgb(0,0,0)"
-         id="feFlood322" />
+         id="feFlood130" />
       <feGaussianBlur
          result="blur"
          in="SourceGraphic"
          stdDeviation="0.200000"
-         id="feGaussianBlur322" />
+         id="feGaussianBlur130" />
       <feOffset
          result="offset"
          in="blur"
          dx="-0.100000"
          dy="-0.300000"
-         id="feOffset322" />
+         id="feOffset130" />
       <feComposite
          result="comp1"
          operator="in"
          in="flood"
          in2="offset"
-         id="feComposite322" />
+         id="feComposite130" />
       <feComposite
          result="comp2"
-         operator="atop"
-         in="comp1"
+         operator="over"
+         in="SourceGraphic"
          in2="comp1"
-         id="feComposite323" />
+         id="feComposite131" />
     </filter>
   </defs>
   <metadata
@@ -158,25 +169,25 @@
        d="m 8.0000008,9 c 1.3333323,0.6666667 1.3333323,1.333333 0,2 -1.5954676,-0.04899 -2.8257101,1.827983 -4.0000011,4 L 1.9999992,13 C 3.9923357,10.338448 5.9923357,9.0051147 8.0000008,9 Z"
        id="path9-5" />
     <path
-       style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter265)"
-       d="M 4,15 5.9806373,9.4542156 3.84771,8.5654959 2,13 Z"
-       id="path174" />
+       style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter107)"
+       d="M 5.9806373,9.4542156 2,13 4,15 Z"
+       id="path16" />
     <path
        style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1"
        d="M 2,13 4,15 9,1 H 7 Z"
        id="path2" />
     <path
-       style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter236)"
-       d="M 7,1 8,3.8 9.846154,3.0307692 9,1 Z"
-       id="path10" />
+       style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter68)"
+       d="M 7,1 8,3.8 9,1 Z"
+       id="path17" />
     <path
-       style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1"
+       style="display:inline;opacity:1;mix-blend-mode:normal;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1"
        d="M 14,13 12,15 7,1 h 2 z"
        id="path2-8" />
     <path
-       style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter323)"
-       d="M 10.019363,9.4542154 C 11.131174,10.0057 12.318726,10.779207 14,13 l -2,2 z"
-       id="path268" />
+       style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1;filter:url(#filter131)"
+       d="m 12,15 2,-2 C 12.650908,11.174163 11.303604,10.044556 10.019367,9.4542174 Z"
+       id="path18" />
     <path
        style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1"
        d="m 7.9999996,9 c -1.3333328,0.6666667 -1.3333328,1.333333 -10e-8,2 C 9.595467,10.951015 10.825709,12.827983 12,15 l 2,-2 C 12.007664,10.338448 10.007665,9.0051147 7.9999996,9 Z"
