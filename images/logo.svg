@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="16"
-   height="16"
-   viewBox="0 0 16 16"
+   width="48"
+   height="48"
+   viewBox="0 0 48 48"
    version="1.1"
    id="svg1"
    xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +163,8 @@
   </metadata>
   <g
      id="layer2"
-     style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1">
+     style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1"
+     transform="matrix(3.6666667,0,0,3.1428571,-5.3333334,-1.1428571)">
     <path
        style="display:inline;fill:#dc6e0a;fill-opacity:1;stroke:none;stroke-opacity:1"
        d="m 8.0000008,9 c 1.3333323,0.6666667 1.3333323,1.333333 0,2 -1.5954676,-0.04899 -2.8257101,1.827983 -4.0000011,4 L 1.9999992,13 C 3.9923357,10.338448 5.9923357,9.0051147 8.0000008,9 Z"
