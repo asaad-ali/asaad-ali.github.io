@@ -101,7 +101,7 @@
     --m-r-head-nav: calc(var(--mp-l-head) + var(--m-l-head-logo));
 
     --f-weight-head-toggle: 800;
-    --f-size-head-toggle: clamp(14px, 3vw, 20px);
+    --f-size-head-toggle: clamp(14px, 2.5vw, 18px);
 
     --pos-r-head-list: var(--m-r-head-nav);
     --pos-t-head-list: calc(var(--mp-tb-head) + var(--h-head-logo));
