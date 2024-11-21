@@ -92,23 +92,23 @@
 
     --m-l-head-logo: 10vw;
     --m-r-head-logo: 8px;
-    --w-head-logo: clamp(32px, 8vw, 48px);
+    --w-head-logo: 40px;
     --h-head-logo: var(--w-head-logo);
 
     --f-weight-head-title: 800;
-    --f-size-head-title: clamp(16px, 4vw, 24px);
+    --f-size-head-title: 20px;
 
     --m-r-head-nav: calc(var(--mp-l-head) + var(--m-l-head-logo));
 
     --f-weight-head-toggle: 800;
-    --f-size-head-toggle: clamp(14px, 2.75vw, 17px);
+    --f-size-head-toggle: 15px;
 
     --pos-r-head-list: var(--m-r-head-nav);
     --pos-t-head-list: calc(var(--mp-tb-head) + var(--h-head-logo));
     --f-weight-head-list: 600;
-    --f-size-head-list: calc(var(--f-size-head-toggle) * 0.8);
+    --f-size-head-list: 13px;
 
-    --m-t-head-list-item: 8px;
+    --m-t-head-list-item: 10px;
 
     --m-l-foot: 0px;
     --m-r-foot: 0px;
