@@ -16,24 +16,6 @@
      id="title1">Logo</title>
   <defs
      id="defs1">
-    <linearGradient
-       id="linearGradient133">
-      <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
-         offset="0"
-         id="stop133" />
-      <stop
-         style="stop-color:#dc6e0a;stop-opacity:1;"
-         offset="0.15801354"
-         id="stop134" />
-    </linearGradient>
-    <linearGradient
-       id="swatch331">
-      <stop
-         style="stop-color:#dc6e0a;stop-opacity:1;"
-         offset="0"
-         id="stop331" />
-    </linearGradient>
     <filter
        style="color-interpolation-filters:sRGB"
        id="filter56"
