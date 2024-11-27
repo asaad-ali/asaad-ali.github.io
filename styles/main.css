@@ -55,9 +55,6 @@
 }
 
 :root {
-    --cursor-normal: url("../images/cursor-normal-32x32.png?v=0.0.0"), auto;
-    --cursor-pointer: url("../images/cursor-pointer-32x32.png?v=0.0.0") 7 0, pointer;
-
     --f-family-default: "JetBrains Mono";
 
     --clr-primary: rgba(33, 33, 53, 1.0);
@@ -127,7 +124,6 @@
     margin: 0px;
     border: 0px;
     padding: 0px;
-    cursor: var(--cursor-normal);
     font-family: var(--f-family-default);
 }
 
@@ -186,7 +182,7 @@ header {
 @media (hover: hover) {
 
     #header-toggle:hover {
-        cursor: var(--cursor-pointer);
+        cursor: pointer;
         color: var(--clr-head-toggle-hover);
     }
 }
@@ -219,7 +215,6 @@ header {
 }
 
 .header-link a {
-    cursor: var(--cursor-pointer);
     text-decoration: none;
     color: var(--clr-head-link);
 }
@@ -236,7 +231,6 @@ header {
 }
 
 #current-page {
-    cursor: var(--cursor-normal);
     pointer-events: none;
     color: var(--clr-head-link-current);
 }
