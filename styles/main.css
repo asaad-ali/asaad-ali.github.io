@@ -92,7 +92,7 @@
     --w-head-logo: 40px;
     --h-head-logo: var(--w-head-logo);
 
-    --f-weight-head-title: 800;
+    --f-weight-head-title: 600;
     --f-size-head-title: 20px;
 
     --m-r-head-nav: calc(var(--mp-l-head) + var(--m-l-head-logo));

@@ -5,7 +5,7 @@
  */
 export function copyright() {
 
-    const YEAR = "2024-" + (((new Date()).getFullYear()) + 1);
+    const YEAR = "2025-" + (((new Date()).getFullYear()) + 1);
     const NAME = "Asaad Ali";
     const NOTICE = "All rights reserved."
 
