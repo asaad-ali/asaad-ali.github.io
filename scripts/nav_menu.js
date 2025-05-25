@@ -9,10 +9,10 @@
  * If element contains class, `"header-list"`'s display style is set to `flex`.
  * If not, display style is set to `none`.  
  * If click is not on `"header-toggle"` or `"header-list"` display style is set to `none`.
- * @returns {null} null
+ * @returns {void} void
  */
-export function nav_menu() {
-
+export function nav_menu()
+{
     const ACTIVE_STATE = "header-toggle-active";
     const HEADER_LIST = document.getElementById("header-list");
     const HEADER_TOGGLE = document.getElementById("header-toggle");
@@ -61,6 +61,4 @@ export function nav_menu() {
             }
         }
     });
-
-    return null;
 }

@@ -1,8 +1,7 @@
 const __FRAGMENT_CONTAINER = [];
 
-
-function __create_fragment() {
-
+function __create_fragment()
+{
     // Create element.
     const FRAGMENT = document.createElement("div");
 
@@ -10,9 +9,8 @@ function __create_fragment() {
     return FRAGMENT;
 }
 
-
-function __set_fragment(mouse_event, fragment) {
-
+function __set_fragment(mouse_event, fragment)
+{
     // Set general properties.
     fragment.style.pointerEvents = "none";
 
@@ -35,51 +33,45 @@ function __set_fragment(mouse_event, fragment) {
 
     // Push to container.
     __FRAGMENT_CONTAINER.push(fragment);
-
-    return null;
 }
 
-
-function __animate_fragment(fragment) {
-
+function __animate_fragment(fragment)
+{
     // Store starting size and opacity.
     let new_size = 10;
     let new_opacity = 1.0;
 
-    // Define callback function.
-    function animate_element() {
+    // Define callback expression.
+    const animate_element = () => {
 
         // Calculate and store new size and opacity.
-        new_size = new_size - 0.5;
-        new_opacity = new_opacity - 0.05;
+        new_size -= 0.5;
+        new_opacity -= 0.05;
+
+        // Compare size and opacity to allowed limit.
+        if (new_size <= 0 || new_opacity <= 0) {
+
+            // Remove element from DOM.
+            fragment.remove();
+
+            return;
+        }
 
         // Assign calculated values to element.
         fragment.style.width = `${new_size}px`;
         fragment.style.height = `${new_size}px`;
         fragment.style.opacity = `${new_opacity}`;
 
-        // Compare element size and opacity to allowed limit.
-        if (new_size <= 0 || new_opacity <= 0) {
-
-            // If so, remove element from DOM.
-            fragment.remove();
-        }
-        else {
-
-            // If not, schedule function for callback
-            requestAnimationFrame(animate_element);
-        }
-    }
+        // Schedule function for callback.
+        requestAnimationFrame(animate_element);
+    };
 
     // Call function to start animation.
     animate_element();
-
-    return null;
 }
 
-
-function __limit_container() {
-
+function __limit_container()
+{
     // Check if container has reached allowed limit.
     if (__FRAGMENT_CONTAINER.length > 10) {
 
@@ -91,19 +83,16 @@ function __limit_container() {
         // Remove oldest element from container and shift remaining fragments.
         __FRAGMENT_CONTAINER.shift();
     }
-
-    return null;
 }
-
 
 /**
  * @description
  * Inserts event listener `"mousemove"` into `<main>`.  
  * Listens for cursor movement over specified content area and applies effect.
- * @returns {null} null
+ * @returns {void} void
  */
-export function cursor_tail() {
-
+export function cursor_tail()
+{
     // Add event listener for mouse move event into <main>.
     document.querySelector("main").addEventListener("mousemove", (event) => {
 
@@ -115,6 +104,4 @@ export function cursor_tail() {
 
         __limit_container();
     });
-
-    return null;
 }

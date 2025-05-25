@@ -1,10 +1,10 @@
 /**
  * @description
  * Targets `element id: "copyright-string"` and sets `.textContent`.
- * @returns {null} null
+ * @returns {void} void
  */
-export function copyright() {
-
+export function copyright()
+{
     const YEAR = "2025-" + (((new Date()).getFullYear()) + 1);
     const NAME = "Asaad Ali";
     const NOTICE = "All rights reserved."
@@ -14,6 +14,4 @@ export function copyright() {
 
     // Set copyright string.
     document.getElementById("copyright-string").textContent = FINAL_STRING;
-
-    return null;
 }
