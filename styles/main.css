@@ -96,7 +96,7 @@
     --mp-tb-head: calc(var(--m-tb-head) + var(--p-tb-head));
 
     --m-l-head-logo: 10vw;
-    --m-r-head-logo: 8px;
+    --m-r-head-logo: 2vw;
     --w-head-logo: 40px;
     --h-head-logo: var(--w-head-logo);
 
