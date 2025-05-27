@@ -1,17 +1,13 @@
 /**
  * @description
- * Targets `element id: "copyright-string"` and sets `.textContent`.
- * @returns {void} void
+ * Target element id: "copyright-string" in document and set '.textContent'.
+ * @returns {void}
  */
 export function copyright()
 {
-    const YEAR = "2025-" + (((new Date()).getFullYear()) + 1);
-    const NAME = "Asaad Ali";
-    const NOTICE = "All rights reserved."
+    const year = "2025-" + (((new Date()).getFullYear()) + 1).toString();
 
-    // Structure copyright string.
-    const FINAL_STRING = YEAR + " " + NAME + ". " + NOTICE;
+    const final_string = year + " Asaad Ali. All rights reserved.";
 
-    // Set copyright string.
-    document.getElementById("copyright-string").textContent = FINAL_STRING;
+    document.getElementById("copyright-string").textContent = final_string;
 }
