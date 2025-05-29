@@ -18,7 +18,7 @@ function HANDLE_MENU_CLOSE(event)
 
 /**
  * @description
- * Target element id: "header-toggle" in document and add event listener "click".  
+ * Target element id: "header-toggle" in document and add event listener "click".
  * Event listener targets element id: "header-toggle" and "header-list" in document
  * and toggles "header-toggle-active".
  * @returns {void}

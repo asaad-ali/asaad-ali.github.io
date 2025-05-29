@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="content-security-policy" content="default-src 'self';">
@@ -15,98 +14,31 @@
     <link rel="stylesheet" href="/styles/404.css?v=0.0.0">
     <script type="module" src="/scripts/main.js?v=0.0.0"></script>
 </head>
-
 <body>
-    <header aria-label="Top Panel">
-
-        <!-- logo -->
-        <img src="/images/logo.svg?v=0.0.0" alt="Logo" aria-label="Logo Image" id="header-logo">
-
-        <!-- title -->
-        <h1 aria-label="Title" id="header-title">Invalid URL</h1>
-
-        <!-- navigation -->
-        <nav aria-label="Navigation" id="header-nav">
-
-            <!-- navigation menu toggle -->
-            <button type="button" aria-label="Navigation Menu Toggle" id="header-toggle">MENU</button>
-
-            <!-- links -->
-            <ul aria-label="Links" id="header-list">
-
-                <!-- home page -->
-                <li aria-label="Navigate To Home Page" class="header-link">
-                    <a href="/" aria-label="Link to Home Page">
-                        HOME
-                    </a>
-                </li>
-
-                <!-- updates page -->
-                <li aria-label="Navigate To Updates Page" class="header-link">
-                    <a href="/pages/updates" aria-label="Link to Updates Page">
-                        UPDATES
-                    </a>
-                </li>
-
-                <!-- about page -->
-                <li aria-label="Navigate To About Page" class="header-link">
-                    <a href="/pages/about" aria-label="Link to About Page">
-                        ABOUT
-                    </a>
-                </li>
-
-                <!-- contact page -->
-                <li aria-label="Navigate To Contact Page" class="header-link">
-                    <a href="/pages/contact" aria-label="Link to Contact Page">
-                        CONTACT
-                    </a>
-                </li>
-
+    <header>
+        <img id="header-logo" src="/images/logo.svg?v=0.0.0" alt="Logo">
+        <h1 id="header-title">Invalid URL</h1>
+        <nav id="header-nav" aria-label="Main Navigation">
+            <button id="header-toggle" type="button">MENU</button>
+            <ul id="header-list">
+                <li class="header-link"><a href="/">HOME</a></li>
+                <li class="header-link"><a href="/pages/updates">UPDATES</a></li>
+                <li class="header-link"><a href="/pages/about">ABOUT</a></li>
+                <li class="header-link"><a href="/pages/contact">CONTACT</a></li>
             </ul>
         </nav>
-
     </header>
-
-
-
-    <main aria-label="Main Content">
-
-        <div aria-label="Error Message" class="error-container">
-
-            <div aria-label="Error Text" id="error-string">
-                ERROR:
-            </div>
-
-            <div aria-label="Error Code" id="error-code">
-                404
-            </div>
-
-            <div aria-label="Error Text 1" id="error-message-1">
-                REQUESTED URL NOT FOUND, OR DOES NOT EXIST
-            </div>
-
-            <div aria-label="Error Text 2" id="error-message-2">
-                NAVIGATE USING ONE OF THE BUTTONS ABOVE
-            </div>
-
-            <div aria-label="Error Text 3" id="error-message-3">
-                OR PRESS BACK ON YOUR BROWSER
-            </div>
-
+    <main>
+        <div class="error-container">
+            <div id="error-string">ERROR:</div>
+            <div id="error-code">404</div>
+            <div id="error-message-1">REQUESTED URL NOT FOUND, OR DOES NOT EXIST</div>
+            <div id="error-message-2">NAVIGATE USING ONE OF THE BUTTONS ABOVE</div>
+            <div id="error-message-3">OR PRESS BACK ON YOUR BROWSER</div>
         </div>
-
     </main>
-
-
-
-    <footer aria-label="Bottom Panel">
-
-        <!-- copyright notice -->
-        <p aria-label="copyright notice" id="footer-copyright">
-            &copy; <span aria-label="copyright string" id="copyright-string"></span>
-        </p>
-
+    <footer>
+        <p id="footer-copyright">&copy; <span id="copyright-string"></span></p>
     </footer>
 </body>
-
 </html>

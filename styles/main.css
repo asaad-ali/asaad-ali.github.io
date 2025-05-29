@@ -136,7 +136,7 @@
     font-family: var(--f-family-default);
 }
 
-* ::selection
+*::selection
 {
     background-color: var(--clr-default-selection-bg);
     color: var(--clr-default-selection-text);
@@ -195,14 +195,6 @@ header
     color: var(--clr-head-toggle);
 }
 
-#header-toggle.header-toggle-active
-{
-    text-decoration-line: underline;
-    text-underline-offset: 5px;
-    text-decoration-thickness: 3px;
-    text-decoration-color: var(--clr-head-toggle-active);
-}
-
 @media (hover:hover)
 {
     #header-toggle:hover
@@ -210,6 +202,14 @@ header
         cursor: pointer;
         color: var(--clr-head-toggle-hover);
     }
+}
+
+#header-toggle.header-toggle-active
+{
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--clr-head-toggle-active);
 }
 
 #header-list
@@ -259,7 +259,7 @@ header
     color: var(--clr-head-link-active);
 }
 
-#current-page
+#here
 {
     pointer-events: none;
     color: var(--clr-head-link-current);

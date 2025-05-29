@@ -41,32 +41,32 @@
     font-style: normal;
 }
 
-.error-container #error-string
+#error-string
 {
     font-size: var(--f-size-error-string);
     color: var(--clr-error-string);
 }
 
-.error-container #error-code
+#error-code
 {
     font-size: var(--f-size-error-code);
     color: var(--clr-error-code);
 }
 
-.error-container #error-message-1
+#error-message-1
 {
     font-size: var(--f-size-error-message-1);
     color: var(--clr-error-message-1);
 }
 
-.error-container #error-message-2
+#error-message-2
 {
     font-size: var(--f-size-error-message-2);
     line-height: 2;
     color: var(--clr-error-message-2);
 }
 
-.error-container #error-message-3
+#error-message-3
 {
     font-size: var(--f-size-error-message-3);
     color: var(--clr-error-message-3);
