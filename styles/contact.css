@@ -1,44 +1,90 @@
 :root
 {
+    --clr-contact-1: var(--clr-secondary);
+    --clr-contact-2: var(--clr-contact-1);
+    --clr-contact-4: var(--clr-contact-1);
+    --clr-contact-5: var(--clr-tertiary);
+    --clr-contact-6: var(--clr-contact-1);
+    --clr-contact-7: var(--clr-contact-5);
 
+    --f-size-contact-1: clamp(10px, 2vw, 24px);
+    --f-size-contact-2: var(--f-size-contact-1);
+    --f-size-contact-4: var(--f-size-contact-1);
+    --f-size-contact-5: var(--f-size-contact-1);
+    --f-size-contact-6: var(--f-size-contact-1);
+    --f-size-contact-7: var(--f-size-contact-1);
+
+    --m-t-contact-4: 3vh;
+    --m-t-contact-6: 1vh;
 }
 
 .contact-info
 {
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
 }
 
 .contact-info *
 {
-
+    font-family: "Monaspace Neon";
+    font-weight: 400;
+    font-style: normal;
 }
 
 #contact-1
 {
-
+    font-size: var(--f-size-contact-1);
+    color: var(--clr-contact-1);
 }
 
 #contact-2
 {
-
+    font-size: var(--f-size-contact-2);
+    color: var(--clr-contact-2);
 }
 
 #contact-3
 {
-
+    align-self: center;
 }
 
 #contact-4
 {
+    margin-top: var(--m-t-contact-4);
+    font-size: var(--f-size-contact-4);
+    color: var(--clr-contact-4);
+}
 
+#contact-4 *
+{
+    display:inline-flex;
 }
 
 #contact-5
 {
-
+    font-size: var(--f-size-contact-5);
+    color: var(--clr-contact-5);
 }
 
 #contact-6
 {
+    margin-top: var(--m-t-contact-6);
+    font-size: var(--f-size-contact-6);
+    color: var(--clr-contact-6);
+}
 
+#contact-6 *
+{
+    display:inline-flex;
+}
+
+#contact-7
+{
+    font-size: var(--f-size-contact-7);
+    color: var(--clr-contact-7);
 }
