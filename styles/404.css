@@ -9,20 +9,20 @@
 
 :root
 {
-    --clr-error-string: var(--clr-secondary);
-    --clr-error-code: var(--clr-tertiary);
-    --clr-error-message-1: var(--clr-error-string);
-    --clr-error-message-2: var(--clr-error-code);
-    --clr-error-message-3: var(--clr-error-string);
+    --clr-error-1: var(--clr-secondary);
+    --clr-error-2: var(--clr-tertiary);
+    --clr-error-3: var(--clr-error-1);
+    --clr-error-4: var(--clr-error-2);
+    --clr-error-5: var(--clr-error-1);
 
-    --f-size-error-string: clamp(24px, 4vw, 64px);
-    --f-size-error-code: clamp(96px, 16vw, 256px);
-    --f-size-error-message-1: clamp(12px, 2vw, 32px);
-    --f-size-error-message-2: var(--f-size-error-message-1);
-    --f-size-error-message-3: var(--f-size-error-message-1);
+    --f-size-error-1: clamp(24px, 4vw, 64px);
+    --f-size-error-2: clamp(96px, 16vw, 256px);
+    --f-size-error-3: clamp(12px, 2vw, 32px);
+    --f-size-error-4: var(--f-size-error-3);
+    --f-size-error-5: var(--f-size-error-3);
 }
 
-.error-container
+.error-info
 {
     margin-left: auto;
     margin-right: auto;
@@ -34,40 +34,40 @@
     align-items: center;
 }
 
-.error-container *
+.error-info *
 {
     font-family: "Monaspace Xenon";
     font-weight: 400;
     font-style: normal;
 }
 
-#error-string
+#error-1
 {
-    font-size: var(--f-size-error-string);
-    color: var(--clr-error-string);
+    font-size: var(--f-size-error-1);
+    color: var(--clr-error-1);
 }
 
-#error-code
+#error-2
 {
-    font-size: var(--f-size-error-code);
-    color: var(--clr-error-code);
+    font-size: var(--f-size-error-2);
+    color: var(--clr-error-2);
 }
 
-#error-message-1
+#error-3
 {
-    font-size: var(--f-size-error-message-1);
-    color: var(--clr-error-message-1);
+    font-size: var(--f-size-error-3);
+    color: var(--clr-error-3);
 }
 
-#error-message-2
+#error-4
 {
-    font-size: var(--f-size-error-message-2);
+    font-size: var(--f-size-error-4);
     line-height: 2;
-    color: var(--clr-error-message-2);
+    color: var(--clr-error-4);
 }
 
-#error-message-3
+#error-5
 {
-    font-size: var(--f-size-error-message-3);
-    color: var(--clr-error-message-3);
+    font-size: var(--f-size-error-5);
+    color: var(--clr-error-5);
 }
