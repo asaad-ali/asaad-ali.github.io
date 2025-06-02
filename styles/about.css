@@ -1,0 +1,78 @@
+:root
+{
+    --clr-about-specification: var(--clr-tertiary);
+    --clr-about-specification-li: var(--clr-secondary);
+    --clr-about-feature: var(--clr-about-specification);
+    --clr-about-feature-li: var(--clr-about-specification-li);
+
+    --f-weight-about-specification: 600;
+    --f-weight-about-specification-li: 400;
+    --f-weight-about-feature: var(--f-weight-about-specification);
+    --f-weight-about-feature-li: var(--f-weight-about-specification-li);
+
+    --f-size-about-specification: 16px;
+    --f-size-about-specification-li: 14px;
+    --f-size-about-feature: var(--f-size-about-specification);
+    --f-size-about-feature-li: var(--f-size-about-specification-li);
+
+    --w-about-specification: 40vw;
+    --w-about-feature: var(--w-about-specification);
+
+    --h-about-specification: 66vh;
+    --h-about-feature: var(--h-about-specification);
+
+    --m-t-about-specification-li: var(--f-size-about-specification-li);
+    --m-t-about-feature-li: var(--m-t-about-specification-li);
+
+    --v-gap-between-elements: 5vw;
+}
+
+#about-info
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-flex;
+    column-gap: var(--v-gap-between-elements);
+}
+
+#about-specification
+{
+    width: var(--w-about-specification);
+    height: var(--h-about-specification);
+    list-style: none;
+    overflow: auto;
+    scrollbar-width: none;
+    font-weight: var(--f-weight-about-specification);
+    font-size: var(--f-size-about-specification);
+    color: var(--clr-about-specification);
+}
+
+#about-specification li
+{
+    margin-top: var(--m-t-about-specification-li);
+    font-weight: var(--f-weight-about-specification-li);
+    font-size: var(--f-size-about-specification-li);
+    color: var(--clr-about-specification-li);
+}
+
+#about-feature
+{
+    width: var(--w-about-feature);
+    height: var(--h-about-feature);
+    list-style: none;
+    overflow: auto;
+    scrollbar-width: none;
+    font-weight: var(--f-weight-about-feature);
+    font-size: var(--f-size-about-feature);
+    color: var(--clr-about-feature);
+}
+
+#about-feature li
+{
+    margin-top: var(--m-t-about-feature-li);
+    font-weight: var(--f-weight-about-feature-li);
+    font-size: var(--f-size-about-feature-li);
+    color: var(--clr-about-feature-li);
+}

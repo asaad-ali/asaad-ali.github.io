@@ -7,6 +7,8 @@
     --clr-contact-6: var(--clr-contact-1);
     --clr-contact-7: var(--clr-contact-5);
 
+    --f-weight-contact-info: 400;
+
     --f-size-contact-1: clamp(10px, 2vw, 24px);
     --f-size-contact-2: var(--f-size-contact-1);
     --f-size-contact-4: var(--f-size-contact-1);
@@ -18,7 +20,7 @@
     --m-t-contact-6: 1vh;
 }
 
-.contact-info
+#contact-info
 {
     margin-left: auto;
     margin-right: auto;
@@ -27,13 +29,7 @@
     display: flex;
     flex-direction: column;
     white-space: nowrap;
-}
-
-.contact-info *
-{
-    font-family: "Monaspace Neon";
-    font-weight: 400;
-    font-style: normal;
+    font-weight: var(--f-weight-contact-info);
 }
 
 #contact-1
@@ -60,13 +56,9 @@
     color: var(--clr-contact-4);
 }
 
-#contact-4 *
-{
-    display:inline-flex;
-}
-
 #contact-5
 {
+    display: inline-flex;
     font-size: var(--f-size-contact-5);
     color: var(--clr-contact-5);
 }
@@ -78,13 +70,9 @@
     color: var(--clr-contact-6);
 }
 
-#contact-6 *
-{
-    display:inline-flex;
-}
-
 #contact-7
 {
+    display: inline-flex;
     font-size: var(--f-size-contact-7);
     color: var(--clr-contact-7);
 }

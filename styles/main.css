@@ -265,6 +265,14 @@ header
     color: var(--clr-head-link-current);
 }
 
+main
+{
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-grow: 1;
+}
+
 footer
 {
     margin-left: var(--m-l-foot);
@@ -286,12 +294,4 @@ footer
     font-size: var(--f-size-foot-copyright);
     align-self: center;
     color: var(--clr-foot-copyright);
-}
-
-main
-{
-    margin-left: 1%;
-    margin-right: 1%;
-    display: flex;
-    flex-grow: 1;
 }
