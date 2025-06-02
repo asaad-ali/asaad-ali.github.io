@@ -7,9 +7,9 @@
     --clr-contact-6: var(--clr-contact-1);
     --clr-contact-7: var(--clr-contact-5);
 
-    --f-weight-contact-info: 400;
+    --f-weight-contact-info-child: 400;
 
-    --f-size-contact-1: clamp(10px, 2vw, 24px);
+    --f-size-contact-1: clamp(14px, 2vw, 24px);
     --f-size-contact-2: var(--f-size-contact-1);
     --f-size-contact-4: var(--f-size-contact-1);
     --f-size-contact-5: var(--f-size-contact-1);
@@ -28,8 +28,11 @@
     margin-bottom: auto;
     display: flex;
     flex-direction: column;
-    white-space: nowrap;
-    font-weight: var(--f-weight-contact-info);
+}
+
+#contact-info *
+{
+    font-weight: var(--f-weight-contact-info-child);
 }
 
 #contact-1

@@ -15,6 +15,10 @@
     --clr-error-4: var(--clr-error-2);
     --clr-error-5: var(--clr-error-1);
 
+    --f-family-error-info-child: "Monaspace Xenon";
+
+    --f-weight-error-info-child: 400;
+
     --f-size-error-1: clamp(24px, 4vw, 64px);
     --f-size-error-2: clamp(96px, 16vw, 256px);
     --f-size-error-3: clamp(12px, 2vw, 32px);
@@ -22,7 +26,7 @@
     --f-size-error-5: var(--f-size-error-3);
 }
 
-.error-info
+#error-info
 {
     margin-left: auto;
     margin-right: auto;
@@ -34,11 +38,10 @@
     align-items: center;
 }
 
-.error-info *
+#error-info *
 {
-    font-family: "Monaspace Xenon";
-    font-weight: 400;
-    font-style: normal;
+    font-family: var(--f-family-error-info-child);
+    font-weight: var(--f-weight-error-info-child);
 }
 
 #error-1
