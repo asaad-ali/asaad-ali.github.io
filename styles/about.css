@@ -15,12 +15,13 @@
     --f-size-about-feature: var(--f-size-about-specification);
     --f-size-about-feature-li: var(--f-size-about-specification-li);
 
-    --w-about-specification: 40vw;
+    --w-about-specification: min(40vw, 500px);
     --w-about-feature: var(--w-about-specification);
 
     --h-about-specification: 66vh;
     --h-about-feature: var(--h-about-specification);
 
+    --m-t-about-info: 6vh;
     --m-t-about-specification-li: var(--f-size-about-specification-li);
     --m-t-about-feature-li: var(--m-t-about-specification-li);
 
@@ -31,7 +32,7 @@
 {
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
+    margin-top: var(--m-t-about-info);
     margin-bottom: auto;
     display: inline-flex;
     column-gap: var(--v-gap-between-elements);
