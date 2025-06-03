@@ -15,17 +15,17 @@
     --f-size-about-feature: var(--f-size-about-specification);
     --f-size-about-feature-li: var(--f-size-about-specification-li);
 
+    --m-t-about-info: 6vh;
+    --m-t-about-specification-li: var(--f-size-about-specification-li);
+    --m-t-about-feature-li: var(--m-t-about-specification-li);
+
     --w-about-specification: min(40vw, 500px);
     --w-about-feature: var(--w-about-specification);
 
     --h-about-specification: 66vh;
     --h-about-feature: var(--h-about-specification);
 
-    --m-t-about-info: 6vh;
-    --m-t-about-specification-li: var(--f-size-about-specification-li);
-    --m-t-about-feature-li: var(--m-t-about-specification-li);
-
-    --v-gap-between-elements: 5vw;
+    --v-gap-about-info: 5vw;
 }
 
 #about-info
@@ -35,7 +35,7 @@
     margin-top: var(--m-t-about-info);
     margin-bottom: auto;
     display: inline-flex;
-    column-gap: var(--v-gap-between-elements);
+    column-gap: var(--v-gap-about-info);
 }
 
 #about-specification
