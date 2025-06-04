@@ -43,8 +43,9 @@
     width: var(--w-about-specification);
     height: var(--h-about-specification);
     list-style: none;
-    overflow: auto;
-    scrollbar-width: none;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--clr-tertiary) var(--clr-primary);
     font-weight: var(--f-weight-about-specification);
     font-size: var(--f-size-about-specification);
     color: var(--clr-about-specification);
@@ -63,8 +64,9 @@
     width: var(--w-about-feature);
     height: var(--h-about-feature);
     list-style: none;
-    overflow: auto;
-    scrollbar-width: none;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--clr-tertiary) var(--clr-primary);
     font-weight: var(--f-weight-about-feature);
     font-size: var(--f-size-about-feature);
     color: var(--clr-about-feature);
