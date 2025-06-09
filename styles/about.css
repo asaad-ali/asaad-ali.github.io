@@ -51,7 +51,7 @@
     color: var(--clr-about-specification);
 }
 
-#about-specification li
+#about-specification li:not(:first-child)
 {
     margin-top: var(--m-t-about-specification-li);
     font-weight: var(--f-weight-about-specification-li);
@@ -72,7 +72,7 @@
     color: var(--clr-about-feature);
 }
 
-#about-feature li
+#about-feature li:not(:first-child)
 {
     margin-top: var(--m-t-about-feature-li);
     font-weight: var(--f-weight-about-feature-li);
