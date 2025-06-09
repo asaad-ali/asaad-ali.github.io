@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: "Monaspace Xenon";
-    src: url("../../fonts/Monaspace-Xenon-v1.200/400.woff2?v=0.0.0") format("woff2");
+    src: url("/fonts/Monaspace-Xenon-v1.200/400.woff2?v=0.0.0") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -19,11 +19,18 @@
 
     --f-weight-error-info-child: 400;
 
-    --f-size-error-1: clamp(24px, 4vw, 64px);
-    --f-size-error-2: clamp(96px, 16vw, 256px);
-    --f-size-error-3: clamp(12px, 2vw, 32px);
+    --f-size-error-1: calc(var(--f-size-head-title) * 2);
+    --f-size-error-2: var(--f-size-error-1);
+    --f-size-error-3: var(--f-size-head-title);
     --f-size-error-4: var(--f-size-error-3);
     --f-size-error-5: var(--f-size-error-3);
+
+    --m-t-error-3: 1vh;
+    --m-t-error-4: var(--m-t-error-3);
+    --m-t-error-5: var(--m-t-error-3);
+
+    --p-l-error-info-child: 2vw;
+    --p-r-error-info-child: var(--p-l-error-info-child);
 }
 
 #error-info
@@ -34,12 +41,14 @@
     margin-bottom: auto;
     display: flex;
     flex-direction: column;
-    white-space: nowrap;
     align-items: center;
+    text-align: center;
 }
 
 #error-info *
 {
+    padding-left: var(--p-l-error-info-child);
+    padding-right: var(--p-r-error-info-child);
     font-family: var(--f-family-error-info-child);
     font-weight: var(--f-weight-error-info-child);
 }
@@ -58,19 +67,21 @@
 
 #error-3
 {
+    margin-top: var(--m-t-error-3);
     font-size: var(--f-size-error-3);
     color: var(--clr-error-3);
 }
 
 #error-4
 {
+    margin-top: var(--m-t-error-4);
     font-size: var(--f-size-error-4);
-    line-height: 2;
     color: var(--clr-error-4);
 }
 
 #error-5
 {
+    margin-top: var(--m-t-error-5);
     font-size: var(--f-size-error-5);
     color: var(--clr-error-5);
 }

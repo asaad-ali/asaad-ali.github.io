@@ -8,7 +8,7 @@
 
     --f-weight-contact-info-child: 400;
 
-    --f-size-contact-1: clamp(14px, 2vw, 24px);
+    --f-size-contact-1: min(var(--f-size-head-title), 18px);
     --f-size-contact-3: var(--f-size-contact-1);
     --f-size-contact-4: var(--f-size-contact-1);
     --f-size-contact-5: var(--f-size-contact-1);
@@ -17,11 +17,7 @@
     --m-t-contact-3: 3vh;
     --m-t-contact-5: 1vh;
 
-    --p-l-contact-info: 5vw;
-
-    --p-r-contact-info: var(--p-l-contact-info);
-
-    --w-contact-info: min(78vw, 1000px);
+    --w-contact-info: 75vw;
 }
 
 #contact-info
@@ -30,8 +26,6 @@
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    padding-left: var(--p-l-contact-info);
-    padding-right: var(--p-r-contact-info);
     width: var(--w-contact-info);
     display: flex;
     flex-direction: column;
@@ -44,6 +38,7 @@
 
 #contact-1
 {
+    align-self: center;
     font-size: var(--f-size-contact-1);
     color: var(--clr-contact-1);
 }

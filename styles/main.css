@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: "Monaspace Neon";
-    src: url("../fonts/Monaspace-Neon-v1.200/200.woff2?v=0.0.0") format("woff2");
+    src: url("/fonts/Monaspace-Neon-v1.200/200.woff2?v=0.0.0") format("woff2");
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -10,7 +10,7 @@
 @font-face
 {
     font-family: "Monaspace Neon";
-    src: url("../fonts/Monaspace-Neon-v1.200/300.woff2?v=0.0.0") format("woff2");
+    src: url("/fonts/Monaspace-Neon-v1.200/300.woff2?v=0.0.0") format("woff2");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -19,7 +19,7 @@
 @font-face
 {
     font-family: "Monaspace Neon";
-    src: url("../fonts/Monaspace-Neon-v1.200/400.woff2?v=0.0.0") format("woff2");
+    src: url("/fonts/Monaspace-Neon-v1.200/400.woff2?v=0.0.0") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -28,7 +28,7 @@
 @font-face
 {
     font-family: "Monaspace Neon";
-    src: url("../fonts/Monaspace-Neon-v1.200/500.woff2?v=0.0.0") format("woff2");
+    src: url("/fonts/Monaspace-Neon-v1.200/500.woff2?v=0.0.0") format("woff2");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -37,7 +37,7 @@
 @font-face
 {
     font-family: "Monaspace Neon";
-    src: url("../fonts/Monaspace-Neon-v1.200/600.woff2?v=0.0.0") format("woff2");
+    src: url("/fonts/Monaspace-Neon-v1.200/600.woff2?v=0.0.0") format("woff2");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -46,7 +46,7 @@
 @font-face
 {
     font-family: "Monaspace Neon";
-    src: url("../fonts/Monaspace-Neon-v1.200/700.woff2?v=0.0.0") format("woff2");
+    src: url("/fonts/Monaspace-Neon-v1.200/700.woff2?v=0.0.0") format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -55,7 +55,7 @@
 @font-face
 {
     font-family: "Monaspace Neon";
-    src: url("../fonts/Monaspace-Neon-v1.200/800.woff2?v=0.0.0") format("woff2");
+    src: url("/fonts/Monaspace-Neon-v1.200/800.woff2?v=0.0.0") format("woff2");
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -82,14 +82,14 @@
     --clr-head-link-current: var(--clr-head-link-active);
     --clr-foot-copyright: var(--clr-secondary);
 
-    --m-l-head: 0px;
-    --m-r-head: 0px;
-    --m-t-head: 0px;
-    --m-b-head: 0px;
-    --p-l-head: 0px;
-    --p-r-head: 0px;
-    --p-t-head: 4vh;
-    --p-b-head: 8px;
+    --m-l-head: 0vw;
+    --m-r-head: 0vw;
+    --m-t-head: 0vh;
+    --m-b-head: 0vh;
+    --p-l-head: 0vw;
+    --p-r-head: 0vw;
+    --p-t-head: 3vh;
+    --p-b-head: 1vh;
     --m-tb-head: calc(var(--m-t-head) + var(--m-b-head));
     --p-tb-head: calc(var(--p-t-head) + var(--p-b-head));
     --mp-l-head: calc(var(--m-l-head) + var(--p-l-head));
@@ -97,35 +97,35 @@
 
     --m-l-head-logo: 10vw;
     --m-r-head-logo: 2vw;
-    --w-head-logo: 40px;
+    --w-head-logo: clamp(32px, 4vw, 48px);
     --h-head-logo: var(--w-head-logo);
 
-    --f-weight-head-title: 600;
-    --f-size-head-title: 20px;
+    --f-weight-head-title: 500;
+    --f-size-head-title: clamp(12px, 2vw, 22px);
 
     --m-r-head-nav: calc(var(--mp-l-head) + var(--m-l-head-logo));
 
     --f-weight-head-toggle: 800;
-    --f-size-head-toggle: 15px;
+    --f-size-head-toggle: min(var(--f-size-head-title), 16px);
 
     --pos-r-head-list: var(--m-r-head-nav);
     --pos-t-head-list: calc(var(--mp-tb-head) + var(--h-head-logo));
     --f-weight-head-list: 600;
-    --f-size-head-list: 13px;
+    --f-size-head-list: var(--f-size-head-toggle);
 
-    --m-t-head-list-item: 10px;
+    --m-t-head-list-item: clamp(6px, 2vh, 12px);
 
-    --m-l-foot: 0px;
-    --m-r-foot: 0px;
-    --m-t-foot: 0px;
-    --m-b-foot: 0px;
-    --p-l-foot: 0px;
-    --p-r-foot: 0px;
-    --p-t-foot: 8px;
-    --p-b-foot: 6px;
+    --m-l-foot: 0vw;
+    --m-r-foot: 0vw;
+    --m-t-foot: 0vh;
+    --m-b-foot: 0vh;
+    --p-l-foot: 0vw;
+    --p-r-foot: 0vw;
+    --p-t-foot: 1vh;
+    --p-b-foot: max(1vh, 6px);
 
     --f-weight-foot-copyright: 400;
-    --f-size-foot-copyright: 8px;
+    --f-size-foot-copyright: clamp(8px, 1vw, 12px);
 }
 
 *
@@ -207,9 +207,9 @@ header
 
 #header-toggle.header-toggle-active
 {
-    text-decoration-line: underline;
-    text-underline-offset: 5px;
-    text-decoration-thickness: 3px;
+    text-decoration: underline;
+    text-underline-offset: calc(var(--f-size-head-toggle) / 4);
+    text-decoration-thickness: calc(var(--f-size-head-toggle) / 6);
     text-decoration-color: var(--clr-head-toggle-active);
 }
 
@@ -220,7 +220,7 @@ header
     top: var(--pos-t-head-list);
     font-weight: var(--f-weight-head-list);
     font-size: var(--f-size-head-list);
-    letter-spacing: 2px;
+    letter-spacing: calc(var(--f-size-head-list) / 4);
     display: none;
     flex-direction: column;
     align-items: flex-end;
@@ -268,8 +268,8 @@ header
 
 main
 {
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 1vw;
+    margin-right: 1vw;
     display: flex;
     flex-grow: 1;
 }

@@ -10,8 +10,8 @@
     --f-weight-about-feature: var(--f-weight-about-specification);
     --f-weight-about-feature-li: var(--f-weight-about-specification-li);
 
-    --f-size-about-specification: 16px;
-    --f-size-about-specification-li: 14px;
+    --f-size-about-specification: min(var(--f-size-head-title), 16px);
+    --f-size-about-specification-li: var(--f-size-about-specification);
     --f-size-about-feature: var(--f-size-about-specification);
     --f-size-about-feature-li: var(--f-size-about-specification-li);
 
