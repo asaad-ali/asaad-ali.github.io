@@ -66,16 +66,17 @@
     --f-family-default: "Monaspace Neon";
 
     --clr-primary: rgba(33, 33, 53, 1.0);
-    --clr-secondary: rgb(215, 215, 215);
-    --clr-tertiary: rgb(220, 110, 10);
+    --clr-secondary: rgba(215, 215, 215, 1.0);
+    --clr-tertiary: rgba(220, 110, 10, 1.0);
     --clr-default-bg: var(--clr-primary);
     --clr-default-selection-bg: rgba(0, 128, 128, 1.0);
-    --clr-default-selection-text: rgb(255, 64, 87, 1.0);
+    --clr-default-selection-text: rgba(255, 64, 87, 1.0);
     --clr-head-title: var(--clr-secondary);
     --clr-head-toggle-bg: var(--clr-primary);
     --clr-head-toggle: var(--clr-tertiary);
     --clr-head-toggle-hover: var(--clr-secondary);
     --clr-head-toggle-active: var(--clr-head-toggle-hover);
+    --clr-head-list-bg: rgba(56, 56, 90, 0.3);
     --clr-head-link: var(--clr-tertiary);
     --clr-head-link-hover: var(--clr-head-toggle-hover);
     --clr-head-link-active: var(--clr-head-link-hover);
@@ -110,8 +111,11 @@
 
     --pos-r-head-list: var(--m-r-head-nav);
     --pos-t-head-list: calc(var(--mp-tb-head) + var(--h-head-logo));
+    --p-l-head-list: calc(var(--f-size-head-toggle) * 2);
     --f-weight-head-list: 600;
     --f-size-head-list: var(--f-size-head-toggle);
+    --border-radius-head-list: 4%;
+    --blur-filter-head-list: 6px;
 
     --m-t-head-list-item: clamp(6px, 2vh, 12px);
 
@@ -218,12 +222,19 @@ header
     position: absolute;
     right: var(--pos-r-head-list);
     top: var(--pos-t-head-list);
+    padding-top: calc(var(--p-l-head-list) / 1.5);
+    padding-bottom: calc(var(--p-l-head-list) / 1.5);
+    padding-left: var(--p-l-head-list);
+    padding-right: calc(var(--p-l-head-list) / 2);
     font-weight: var(--f-weight-head-list);
     font-size: var(--f-size-head-list);
     letter-spacing: calc(var(--f-size-head-list) / 4);
     display: none;
     flex-direction: column;
     align-items: flex-end;
+    border-radius: var(--border-radius-head-list);
+    background-color: var(--clr-head-list-bg);
+    backdrop-filter: blur(var(--blur-filter-head-list));
 }
 
 #header-list.header-toggle-active

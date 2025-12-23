@@ -1,8 +1,3 @@
-/**
- * @description
- * Target element id: "copyright-string" in document and set '.textContent'.
- * @returns {void}
- */
 export function copyright()
 {
     const year = "2025-" + (((new Date()).getFullYear()) + 1).toString();
